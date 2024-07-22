@@ -1,6 +1,6 @@
 # SST-ION Starter - Deploy to AWS
 
-This project is a TypeScript starter template for building serverless applications using SST and AWS. It's been setup with a lightly opinionated tsconfig & eslintrc to help you get started quickly.
+This project is a **TypeScript** starter template for building serverless applications using SST and AWS. It's been setup with a _lightly_ opinionated tsconfig & eslintrc to help you get started _quickly_ 🚀
 
 ## Prerequisites
 
@@ -13,9 +13,12 @@ Before you begin, make sure you have the following installed:
 
 1. Install AWS CLI following the instructions on the [official AWS documentation](https://aws.amazon.com/cli/).
 2. Configure AWS CLI with your AWS account credentials by running:
-   aws configure
 
-Follow the prompts to input your AWS Access Key ID, Secret Access Key, region, and output format.
+```sh
+aws configure
+```
+
+Follow the prompts to input your **AWS Access Key ID**, **Secret Access Key**. You can leave **region** and **output** format _empty_ if desired.
 
 ## Installation
 
