@@ -16,5 +16,6 @@
     "paths": {
       "@/*": ["src/*"]
     }
-  }
+  },
+  "include": ["src/**/*.ts", "./sst-env.d.ts"]
 }
