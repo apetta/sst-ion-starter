@@ -48,7 +48,7 @@ Deploys the app to a development stage on AWS using SST.
 pnpm run deploy:production
 ```
 
-Deploys the app to production on AWS using SST. This script ensures resources are retained even after the stack is removed.
+Deploys the app to production on AWS using SST. This script ensures resources are retained even after the stack is removed - _just in case_ 😅
 
 ## Learn More
 
