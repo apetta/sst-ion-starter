@@ -1,6 +1,6 @@
-# SST-Ion Starter
+# SST-ION Starter - Deploy to AWS
 
-This project is a starter template for building serverless applications using SST and AWS.
+This project is a TypeScript starter template for building serverless applications using SST and AWS. It's been setup with a lightly opinionated tsconfig & eslintrc to help you get started quickly.
 
 ## Prerequisites
 
