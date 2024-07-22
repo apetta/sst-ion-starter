@@ -1,0 +1,25 @@
+{
+  "name": "sst-ion",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.141",
+    "@types/node": "~20.14.11",
+    "@typescript-eslint/eslint-plugin": "~7.16.1",
+    "@typescript-eslint/parser": "~7.16.1",
+    "eslint": "~9.7.0",
+    "sst": "~0.1.4",
+    "typescript": "~5.5.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sqs": "~3.616.0",
+    "sst": "ion"
+  }
+}
