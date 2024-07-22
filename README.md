@@ -21,7 +21,9 @@ Follow the prompts to input your AWS Access Key ID, Secret Access Key, region, a
 
 To set up the project dependencies, run:
 
+```sh
 pnpm install
+```
 
 ## Available Scripts
 
