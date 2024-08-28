@@ -8,9 +8,12 @@ dependencies:
   '@aws-sdk/client-sqs':
     specifier: ~3.616.0
     version: 3.616.0
+  nodejs-polars:
+    specifier: ~0.14.0
+    version: 0.14.0
   sst:
     specifier: ion
-    version: 0.1.7
+    version: 0.1.17
 
 devDependencies:
   '@types/aws-lambda':
@@ -3028,6 +3031,92 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
+  /nodejs-polars-android-arm64@0.14.0:
+    resolution: {integrity: sha512-hDavOX5ZMGha1srkgRA6xXfB5ZBmLbWu4rjH/SIrS7wewtr+j23F8ivOCSXYVV5QIkEyihQN8An7Er3Ap2n5lA==}
+    engines: {node: '>= 16'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /nodejs-polars-darwin-arm64@0.14.0:
+    resolution: {integrity: sha512-UGIRIqzLte1fPA+5acoAflo9eT7Rja2xRnbcoz9TqlPIe7iYYWJXc0kBgVnDT9eWy9JuC4UWRh4K3zJAOxDjnA==}
+    engines: {node: '>= 16'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /nodejs-polars-darwin-x64@0.14.0:
+    resolution: {integrity: sha512-Ao+ztykpXX+0WJ0pRjlrXleAxXZJhIPpa2g61kiTKWLfZ2kh9sDikDslG+TUOQwV80NqUcVIm+eWxvu+ESD+jw==}
+    engines: {node: '>= 16'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /nodejs-polars-linux-arm64-gnu@0.14.0:
+    resolution: {integrity: sha512-3anqiqPu3nvx4ktIbOj8Wt5MIIRc1NKGKhzE4DQoPlBm2HxRz9o0thOYi6KinpcrCcxswbEtS6aSAb4I0jABYQ==}
+    engines: {node: '>= 16'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /nodejs-polars-linux-arm64-musl@0.14.0:
+    resolution: {integrity: sha512-vOaWubVSqDW291Wxcw3d1bbH1hgvMSEWw0yEaBNC3x2ataTpOt2UNDUJMceMf08uJOpxeZsd55DhzCJfHDVeUA==}
+    engines: {node: '>= 16'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /nodejs-polars-linux-x64-gnu@0.14.0:
+    resolution: {integrity: sha512-DNqSjG2BGuXIYH1WhNKN/0NHnQM7aYdcSsll9azgBkZ3n2C4WRdXadrMKvHuU3g8DoNv/7pkJoUVS2CUez2iMg==}
+    engines: {node: '>= 16'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /nodejs-polars-linux-x64-musl@0.14.0:
+    resolution: {integrity: sha512-CjAAxAdAC+Fbp8VpyrRmRgjviO0gESVXjTASLuST0x4ulG4H9uChQL3Xnev2XdaSu31uIXFdFHDu6jIXx/e2nw==}
+    engines: {node: '>= 16'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /nodejs-polars-win32-x64-msvc@0.14.0:
+    resolution: {integrity: sha512-X2WpHfudcYTAu9/OZS82FpMCSuKtFCoBgDaWEy2hZNfQG0W+AaMh6ro9K8QDbYyZYDEMrjbUdQEuLYNl84ZSXg==}
+    engines: {node: '>= 16'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /nodejs-polars@0.14.0:
+    resolution: {integrity: sha512-2wORrx9Ipi2TinZOGVk4HtOFpeIoZwILZPxd7oqFj2eLhkz7QJYKu9vRjohvUtyi5HG55EybZ9dQDpy5KybRrA==}
+    engines: {node: '>= 18'}
+    optionalDependencies:
+      nodejs-polars-android-arm64: 0.14.0
+      nodejs-polars-darwin-arm64: 0.14.0
+      nodejs-polars-darwin-x64: 0.14.0
+      nodejs-polars-linux-arm64-gnu: 0.14.0
+      nodejs-polars-linux-arm64-musl: 0.14.0
+      nodejs-polars-linux-x64-gnu: 0.14.0
+      nodejs-polars-linux-x64-musl: 0.14.0
+      nodejs-polars-win32-x64-msvc: 0.14.0
+    dev: false
+
   /object-hash@2.2.0:
     resolution: {integrity: sha512-gScRMn0bS5fH+IuwyIFgnh9zBdo4DV+6GhygmWM9HyNJSgS0hScp1f5vjtm7oIIOiT9trXrShAkLFSc2IqKNgw==}
     engines: {node: '>= 6'}
@@ -3304,48 +3393,48 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /sst-darwin-arm64@0.1.7:
-    resolution: {integrity: sha512-ilG6YC+ZRg+ZMbjz5roaysFmCgzkj3BD+o2ZZ2omVpV8ruJ2YKxKlTUi8iYc6Iscyr9wMy5DHltUKMhFaASLYA==}
+  /sst-darwin-arm64@0.1.17:
+    resolution: {integrity: sha512-6hbvw28zE+pZ9+ymHOlXVFH0vU5IFjNam4stkb3NBhLtKiXWQoCbn8FkIw9Z1gvcMhzr8SOZxmFeUn2PiM6CCw==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: false
     optional: true
 
-  /sst-darwin-x64@0.1.7:
-    resolution: {integrity: sha512-V7HE6LKmdKGa801D1LlKuWh+mm2XY3YG/Ho3yxpm/2Znyocu8UuRU0NKsxYJ18H40wCeCqp8wpJ0tdlis4PS1w==}
+  /sst-darwin-x64@0.1.17:
+    resolution: {integrity: sha512-7tOODfc5MJVWYd4D6jKIsE1YG+dISVcl0ZhgnvZVOw/Ai0v3tladx7ms8fe6TsQ66uJoV/y0tmm0A6k8opyX4g==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: false
     optional: true
 
-  /sst-linux-arm64@0.1.7:
-    resolution: {integrity: sha512-DRj1mRnhbyBE0oaht8GLRM4isym6KEM07r7KNOXKYDCl12oxcBG8jpo/QcK6XvDSRqOYPSOZDk0lKoG7kWqYnA==}
+  /sst-linux-arm64@0.1.17:
+    resolution: {integrity: sha512-VxGgJU+6HvNDiFwlb1lTLgM0liZVn4oZ9bTwliMP7I6pHmcxI+R1Fn4YO/UITJxEgPNh1Qi95PD9NNZymV2M8g==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: false
     optional: true
 
-  /sst-linux-x64@0.1.7:
-    resolution: {integrity: sha512-GwW1X/UwJ5z6MTCuKrH/SzfkmQHw+QOFoFxUsVBAnfBz40AljLBIkw5CLma5qxwJ1VsI4SP5qEq9zsCeo6QMmQ==}
+  /sst-linux-x64@0.1.17:
+    resolution: {integrity: sha512-fsS+4wq9rLfS8QPLkOXyFvYySl291G/itOF6EPLzX56iRlJYffUMUqkZGD+qDtz5UqimlEApB/U+SoIcaNC4YA==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: false
     optional: true
 
-  /sst-linux-x86@0.1.7:
-    resolution: {integrity: sha512-eYGbXXYNZpYc3vFkZpm/W7h9rP6MJ5F830P3Q8uzv0lk+Wh3NO+DKtYsVqwaIZtANle4PWp7tmJbm5xK4eAsfw==}
+  /sst-linux-x86@0.1.17:
+    resolution: {integrity: sha512-XxlXBr0ek/hiDvozG8m1GM+pM4NU5OGu0ekcXbGm7blF2sHY++MyJPYLeOlUh2LmKR8cg8Y7TZSagBmHdhNN8g==}
     cpu: [x86]
     os: [linux]
     requiresBuild: true
     dev: false
     optional: true
 
-  /sst@0.1.7:
-    resolution: {integrity: sha512-A1XtWWSYS21gOnRVJeF4ZdjlVvyX2U8nih7TGow6YB3BprAzKRZoose7hXTbfRSRQZmaJDL34eSxFAYDvS94dw==}
+  /sst@0.1.17:
+    resolution: {integrity: sha512-B9ywR7sC6INCif2mC+kJCm1IEmEEHHTJIqh5BtfcneFAVMBAxDTTPTmpSquHTXALkP1T/B4wXh1rMnWMxvyQFA==}
     hasBin: true
     peerDependencies:
       hono: 4.x
@@ -3361,11 +3450,11 @@ packages:
       jose: 5.2.3
       openid-client: 5.6.4
     optionalDependencies:
-      sst-darwin-arm64: 0.1.7
-      sst-darwin-x64: 0.1.7
-      sst-linux-arm64: 0.1.7
-      sst-linux-x64: 0.1.7
-      sst-linux-x86: 0.1.7
+      sst-darwin-arm64: 0.1.17
+      sst-darwin-x64: 0.1.17
+      sst-linux-arm64: 0.1.17
+      sst-linux-x64: 0.1.17
+      sst-linux-x86: 0.1.17
     transitivePeerDependencies:
       - aws-crt
     dev: false

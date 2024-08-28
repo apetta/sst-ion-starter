@@ -16,6 +16,12 @@ export default $config({
       handler: "src/publisher.handler",
       link: [queue],
       url: true,
+      nodejs: {
+        loader: {
+          ".node": "file",
+        },
+        install: ["nodejs-polars", "nodejs-polars-linux-x64-gnu"],
+      },
     });
 
     return {

@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-sqs": "~3.616.0",
+    "nodejs-polars": "~0.14.0",
     "sst": "ion"
   }
 }
